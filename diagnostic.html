@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compare Your School — PL Playbook Portal</title>
+  <meta name="description" content="A short, structured comparison against Lion Secondary's starting conditions — to help you decide what's likely to transfer to your school, and what to adapt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .diag-question { padding: var(--sp-5) 0; border-bottom: 1px solid var(--line); }
+    .diag-options { display: flex; flex-direction: column; gap: var(--sp-2); margin-top: var(--sp-3); }
+    .diag-options label { display: flex; align-items: flex-start; gap: var(--sp-2); font-size: var(--step-1); }
+    .diag-options input { margin-top: 3px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="PL Playbook Portal home">
+        <svg class="ring-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#1f5c57" stroke-width="4" stroke-dasharray="28 12" />
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#c8862b" stroke-width="4" stroke-dasharray="10 30" stroke-dashoffset="-28" />
+        </svg>
+        PL Playbook
+      </a>
+      <nav class="nav-primary" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="role.html">By Role</a></li>
+          <li><a href="topic.html">Topics</a></li>
+          <li><a href="journey.html">Journeys</a></li>
+          <li><a href="content.html">Case Study</a></li>
+          <li><a href="search.html">Templates</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--icon" href="search.html" aria-label="Search the playbook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Mobile">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="role.html">By Role</a></li>
+      <li><a href="topic.html">Topics</a></li>
+      <li><a href="journey.html">Journeys</a></li>
+      <li><a href="content.html">Case Study</a></li>
+      <li><a href="search.html">Templates</a></li>
+    </ul>
+  </nav>
+
+  <div class="utility-strip">
+    <div class="container">
+      <a href="content.html">Quick Reference</a>
+      <a href="topic.html">A–Z Glossary</a>
+      <a href="search.html">Appendices A–G</a>
+      <a href="#">Browse full playbook</a>
+      <a href="#">How to use this site</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="section--tight">
+      <div class="container" style="max-width: 42rem;">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Compare Your School</span>
+        </nav>
+        <h1>How does your school compare to Lion Secondary?</h1>
+        <p class="lede">Four short questions. The output is a written comparison, not a score — its job is to help you decide what to read closely next, not to rate your school.</p>
+
+        <form data-diagnostic-form class="stack" style="margin-top: var(--sp-6);">
+
+          <fieldset class="diag-question">
+            <legend><strong>1. How would you describe your school's current PLC culture?</strong></legend>
+            <div class="diag-options">
+              <label><input type="radio" name="culture" value="isolated" required /> Mostly isolated practice — teachers plan and teach largely on their own</label>
+              <label><input type="radio" name="culture" value="pockets" /> Some pockets of collaboration, but inconsistent across departments</label>
+              <label><input type="radio" name="culture" value="established" /> An established, school-wide PLC culture already</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="diag-question">
+            <legend><strong>2. What's your biggest current tension?</strong></legend>
+            <div class="diag-options">
+              <label><input type="radio" name="tension" value="consistency" required /> Inconsistent practice across classrooms/departments</label>
+              <label><input type="radio" name="tension" value="capacity" /> Staff capacity, workload, or morale</label>
+              <label><input type="radio" name="tension" value="technology" /> Technology or pedagogy integration (e.g. e-Pedagogy)</label>
+              <label><input type="radio" name="tension" value="other" /> Something else entirely</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="diag-question">
+            <legend><strong>3. How experienced is whoever is leading the PL agenda?</strong></legend>
+            <div class="diag-options">
+              <label><input type="radio" name="experience" value="first-year" required /> First year in the role</label>
+              <label><input type="radio" name="experience" value="established" /> 2–4 years</label>
+              <label><input type="radio" name="experience" value="veteran" /> 5+ years</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="diag-question" style="border-bottom: none;">
+            <legend><strong>4. Is your School Management Team broadly supportive, lukewarm, or skeptical of change right now?</strong></legend>
+            <div class="diag-options">
+              <label><input type="radio" name="smt" value="supportive" required /> Broadly supportive and cooperative</label>
+              <label><input type="radio" name="smt" value="lukewarm" /> Lukewarm — willing but not driving it</label>
+              <label><input type="radio" name="smt" value="skeptical" /> Actively skeptical or stretched thin</label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn--primary" type="submit">See the comparison</button>
+        </form>
+
+        <div data-diagnostic-output style="margin-top: var(--sp-6);"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="fine-print">
+        <span>RESTRICTED / NON-SENSITIVE — internal AST · PDPO resource</span>
+        <a href="index.html">← Back to home</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-region" data-toast-region aria-live="polite"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

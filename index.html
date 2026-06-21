@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PL Playbook Portal — A professional learning experience, not a document</title>
+  <meta name="description" content="Find what you need from the AST PDPO Professional Learning Playbook in two clicks — by role, by challenge, or by where your school is today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =================== HEADER =================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="PL Playbook Portal home">
+        <svg class="ring-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#1f5c57" stroke-width="4" stroke-dasharray="28 12" />
+          <circle cx="20" cy="20" r="16" fill="none" stroke="#c8862b" stroke-width="4" stroke-dasharray="10 30" stroke-dashoffset="-28" />
+        </svg>
+        PL Playbook
+      </a>
+
+      <nav class="nav-primary" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="role.html">By Role</a></li>
+          <li><a href="topic.html">Topics</a></li>
+          <li><a href="journey.html">Journeys</a></li>
+          <li><a href="content.html">Case Study</a></li>
+          <li><a href="search.html">Templates</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--icon" href="search.html" aria-label="Search the playbook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Mobile">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="role.html">By Role</a></li>
+      <li><a href="topic.html">Topics</a></li>
+      <li><a href="journey.html">Journeys</a></li>
+      <li><a href="content.html">Case Study</a></li>
+      <li><a href="search.html">Templates</a></li>
+    </ul>
+  </nav>
+
+  <!-- Utility strip: always one click away, on every page -->
+  <div class="utility-strip">
+    <div class="container">
+      <a href="content.html">Quick Reference</a>
+      <a href="topic.html">A–Z Glossary</a>
+      <a href="search.html">Appendices A–G</a>
+      <a href="#">Browse full playbook</a>
+      <a href="#">How to use this site</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- =================== HERO =================== -->
+    <section class="hero">
+      <svg class="hero-arc" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="170" fill="none" stroke="#1f5c57" stroke-width="14" stroke-dasharray="260 280" opacity="0.5"/>
+        <circle cx="200" cy="200" r="170" fill="none" stroke="#c8862b" stroke-width="14" stroke-dasharray="90 450" stroke-dashoffset="-260" opacity="0.6"/>
+      </svg>
+      <div class="container hero-inner">
+        <p class="eyebrow">AST · PDPO Professional Learning Playbook</p>
+        <h1>This is not a document.<br />This is a professional learning experience.</h1>
+        <p class="lede" data-role-aware="greeting">Find what you need. Skip what you don't. Come back when you're ready for the next thing.</p>
+
+        <div data-cycle-nudge data-nudge-id="home"></div>
+
+        <div class="search-block">
+          <form class="search-bar" role="search" data-search-form aria-label="Search the playbook">
+            <label class="visually-hidden" for="hero-search">What are you working on today?</label>
+            <div class="search-suggest" data-search-suggest style="flex:1; position:relative;">
+              <input id="hero-search" type="search" placeholder="What are you working on today?" data-search-input autocomplete="off" />
+              <ul class="suggest-panel" data-suggest-panel hidden></ul>
+            </div>
+            <button class="btn btn--primary" type="submit">Search</button>
+          </form>
+          <div class="filter-row" role="group" aria-label="Refine by">
+            <button class="chip" type="button" data-filter-chip aria-pressed="false">Role</button>
+            <button class="chip" type="button" data-filter-chip aria-pressed="false">Challenge</button>
+            <button class="chip" type="button" data-filter-chip aria-pressed="false">Cycle stage</button>
+            <button class="chip" type="button" data-filter-chip aria-pressed="false">Framework</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CHOOSE YOUR WAY IN =================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <h2>Choose your way in</h2>
+          <p class="text-muted">Every door leads to the same content — pick whichever fits how you think.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="door-card">
+            <svg class="door-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <h3>By Role</h3>
+            <p class="text-muted">"I want content shaped for me."</p>
+            <ul>
+              <li class="meta">School Leaders · SSD</li>
+              <li class="meta">HOD · Teacher Leader</li>
+              <li class="meta">IM/CIM · RO</li>
+            </ul>
+            <a class="btn--text" href="role.html">Enter by role →</a>
+          </article>
+
+          <article class="door-card">
+            <svg class="door-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="currentColor" stroke-width="2"/><path d="M12 12v9M12 12L4 7.5M12 12l8-4.5" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>By Challenge</h3>
+            <p class="text-muted">"I'm working on a problem."</p>
+            <ul>
+              <li class="meta">Building culture · Mentoring</li>
+              <li class="meta">Workplace learning</li>
+              <li class="meta">Collaborative learning · Leadership</li>
+            </ul>
+            <a class="btn--text" href="topic.html">Enter by challenge →</a>
+          </article>
+
+          <article class="door-card">
+            <svg class="door-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19l5-10 4 6 3-5 4 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>By Stage</h3>
+            <p class="text-muted">"I want what fits where we are."</p>
+            <ul>
+              <li class="meta">Emerging</li>
+              <li class="meta">Developing</li>
+              <li class="meta">Transforming</li>
+            </ul>
+            <a class="btn--text" href="journey.html">Enter by stage →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FEATURED RESOURCES =================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured right now</h2>
+          <a class="btn--text" href="search.html">See all resources →</a>
+        </div>
+
+        <div class="rail" role="list" aria-label="Featured resources">
+          <article class="resource-card" role="listitem" data-card-id="tolp-template" data-notes-enabled>
+            <div class="resource-card__head"><span class="tag">Template</span><span class="meta">Appendix A</span></div>
+            <h4>Total Learning Plan (ToLP)</h4>
+            <p>Translate strategic initiatives into differentiated learning experiences.</p>
+            <div class="resource-card__foot">
+              <button class="btn btn--ghost btn--sm" data-download="ToLP Template">Download</button>
+              <a class="meta" href="content.html#level-4" data-mark-visited>Preview →</a>
+            </div>
+          </article>
+
+          <article class="resource-card" role="listitem" data-card-id="learn-review-table">
+            <div class="resource-card__head"><span class="tag">Checklist</span><span class="meta">Appendix D</span></div>
+            <h4>LEARN Review Table</h4>
+            <p>Structure mid-year and year-end review conversations.</p>
+            <div class="resource-card__foot">
+              <button class="btn btn--ghost btn--sm" data-download="LEARN Review Table">Download</button>
+              <a class="meta" href="content.html#level-4" data-mark-visited>Preview →</a>
+            </div>
+          </article>
+
+          <article class="resource-card" role="listitem" data-card-id="midyear-checklist">
+            <div class="resource-card__head"><span class="tag">Checklist</span><span class="meta">Appendix B</span></div>
+            <h4>Mid-Year Review Checklist</h4>
+            <p>A condensed companion for the busiest point in the cycle.</p>
+            <div class="resource-card__foot">
+              <button class="btn btn--ghost btn--sm" data-download="Mid-Year Checklist">Download</button>
+              <a class="meta" href="content.html#level-4" data-mark-visited>Preview →</a>
+            </div>
+          </article>
+
+          <article class="resource-card" role="listitem" data-card-id="lion-secondary">
+            <div class="resource-card__head"><span class="tag">Worked Example</span><span class="meta">Part 6</span></div>
+            <h4>Lion Secondary School Case Study</h4>
+            <p>One school's full Plan–Implement–Review cycle, end to end.</p>
+            <div class="resource-card__foot">
+              <a class="btn btn--ghost btn--sm" href="journey.html">Open</a>
+              <a class="meta" href="diagnostic.html">Compare your school →</a>
+            </div>
+          </article>
+
+          <article class="resource-card" role="listitem" data-card-id="3a-reflection">
+            <div class="resource-card__head"><span class="tag">Reflection Tool</span><span class="meta">Part 4.2</span></div>
+            <h4>3A Reflection Approach</h4>
+            <p>Awareness → Alternatives → Action, for deepening any PL experience.</p>
+            <div class="resource-card__foot">
+              <a class="btn btn--ghost btn--sm" href="content.html#level-4" data-mark-visited>Open</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== LEARNING JOURNEYS =================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <h2>Recommended learning journeys</h2>
+          <a class="btn--text" href="journey.html">See all journeys →</a>
+        </div>
+
+        <div class="grid grid--auto">
+          <a class="journey-card" href="journey.html">
+            <h4>New SSD: First 90 Days</h4>
+            <p class="text-muted">Identity → frameworks → first LNA → first tension → first ToLP draft.</p>
+            <div class="progress-dial">
+              <div class="progress-dial__dots"><span></span><span></span><span></span><span></span><span></span></div>
+              <span class="progress-dial__label">5 steps</span>
+            </div>
+          </a>
+          <a class="journey-card" href="journey.html">
+            <h4>From Planning to Evidence</h4>
+            <p class="text-muted">Creative tension → Theory of Change → ToLP → first LEARN review.</p>
+            <div class="progress-dial">
+              <div class="progress-dial__dots"><span></span><span></span><span></span><span></span></div>
+              <span class="progress-dial__label">4 steps</span>
+            </div>
+          </a>
+          <a class="journey-card" href="journey.html">
+            <h4>Leading a Resistant Change</h4>
+            <p class="text-muted">Diagnose → build a coalition → early wins → institutionalise.</p>
+            <div class="progress-dial">
+              <div class="progress-dial__dots"><span></span><span></span><span></span><span></span></div>
+              <span class="progress-dial__label">4 steps</span>
+            </div>
+          </a>
+          <a class="journey-card" href="journey.html">
+            <h4>Building a Collaborative Culture</h4>
+            <p class="text-muted">PLCDR baseline → PLC dimensions → PLT design → open classroom → deepen.</p>
+            <div class="progress-dial">
+              <div class="progress-dial__dots"><span></span><span></span><span></span><span></span><span></span></div>
+              <span class="progress-dial__label">5 steps</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid grid--3">
+        <div>
+          <h4>AST · PDPO</h4>
+          <p>Professional Development and Programme Office, Academy of Singapore Teachers — Professional Learning Playbook for SSDs and School Leaders.</p>
+        </div>
+        <div>
+          <h4>Find your way in</h4>
+          <ul class="stack">
+            <li><a href="role.html">By Role</a></li>
+            <li><a href="topic.html">By Topic (A–Z)</a></li>
+            <li><a href="journey.html">Learning Journeys</a></li>
+            <li><a href="search.html">Templates &amp; Downloads</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Need help?</h4>
+          <ul class="stack">
+            <li><a href="#">moe_pdpo@moe.gov.sg</a></li>
+            <li><a href="#">Give feedback on this site</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fine-print">
+        <span>RESTRICTED / NON-SENSITIVE — internal AST · PDPO resource</span>
+        <span>Prototype build · content unchanged from playbook v2</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-region" data-toast-region aria-live="polite"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
